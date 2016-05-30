@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PickyTestPod20160530_Example' do
+  pod 'PickyTestPod20160530', :path => '../'
+
+  target 'PickyTestPod20160530_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
